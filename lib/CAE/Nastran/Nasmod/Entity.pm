@@ -1,11 +1,11 @@
-package Entity;
+package CAE::Nastran::Nasmod::Entity;
 
 use strict;
 use warnings;
 use vars qw($VERSION $DATE);
 
-$VERSION           = '0.23';
-$DATE              = 'Wed Apr 23 18:37:03 2014';
+$VERSION           = '0.24';
+$DATE              = 'Wed Apr 23 18:59:55 2014';
 
 sub new
 {
