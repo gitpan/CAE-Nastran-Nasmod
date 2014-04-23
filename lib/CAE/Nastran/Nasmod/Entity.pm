@@ -4,8 +4,8 @@ use strict;
 use warnings;
 use vars qw($VERSION $DATE);
 
-$VERSION           = '0.22';
-$DATE              = 'Wed Apr 23 17:48:32 2014';
+$VERSION           = '0.23';
+$DATE              = 'Wed Apr 23 18:37:03 2014';
 
 sub new
 {

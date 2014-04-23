@@ -4,7 +4,7 @@
     description =>  "CAE::Nastran::Nasmod parses nastran models, "
       . "with an api it is possible to access or change certain data fields, "
       . "reduce data with a filter and write model to file",
-    version  => '0.22',
+    version  => '0.23',
     release_status => 'beta',
     author   => ['Alexander Vogel <avoge@cpan.org>'],
     license  => [ 'perl_5' ],
@@ -26,11 +26,11 @@
     provides => {
     	'CAE::Nastran::Nasmod' => {
     		file => 'lib/CAE/Nastran/Nasmod.pm',
-    		version => '0.22',
+    		version => '0.23',
     	},
     	'CAE::Nastran::Nasmod::Entity' => {
     		file => 'lib/CAE/Nastran/Nasmod/Entity.pm',
-    		version => '0.22',
+    		version => '0.23',
     	},
     },
     resources => {
@@ -44,3 +44,4 @@
     },
     generated_by => 'Module::Build version 0.36',
   };
+ 

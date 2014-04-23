@@ -1,12 +1,12 @@
-package Nasmod;
+package CAE::Nastran::Nasmod;
 
 use strict;
 use warnings;
 use CAE::Nastran::Nasmod::Entity;
 use vars qw($VERSION $ABSTRACT $DATE);
 
-$VERSION           = '0.22';
-$DATE              = 'Wed Apr 23 17:48:32 2014';
+$VERSION           = '0.23';
+$DATE              = 'Wed Apr 23 18:37:03 2014';
 $ABSTRACT          = 'basic access to nastran models';
 
 sub new
