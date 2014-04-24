@@ -5,8 +5,8 @@ use warnings;
 use CAE::Nastran::Nasmod::Entity;
 use vars qw($VERSION $ABSTRACT $DATE);
 
-$VERSION           = '0.24';
-$DATE              = 'Wed Apr 23 18:59:55 2014';
+$VERSION           = '0.25';
+$DATE              = 'Thu Apr 24 17:48:03 2014';
 $ABSTRACT          = 'basic access to nastran models';
 
 sub new
@@ -366,6 +366,13 @@ import a nastran model from files, filter content, extract data, overwrite data,
 
 =head1 API
 
+=head2 new()
+
+creates and returns a new Nasmod
+
+    # create a new Nasmod
+    my $model = CAE::Nastran::Nasmod->new();
+
 =head2 import()
 
 imports a Nastran model from file. it only imports nastran bulk data. no sanity checks will be performed - duplicate ids or the like are possible.
@@ -456,12 +463,6 @@ adds entities to a model.
     # adds the entities to the model
     $model->addEntity($entity, $entity2);
 
-=head2 getRow()
-
-returns all data columns of an entity as an array.
-
-    my @row = $entity->getRow();
-
 =head2 merge()
 
 merges two models.
@@ -491,9 +492,9 @@ prints the whole model in nastran format to STDOUT
 
 only bulk data is supported. only 8-field nastran format is supported. the larger the model, the slowlier is filtering.
 
-=head1 NEXTSTEPS
+=head1 TODO
 
-index for faster filtering
+indexing to accelerate filtering
 
 =head1 TAGS
 
